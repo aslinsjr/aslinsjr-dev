@@ -40,9 +40,7 @@ section {
 
 @media (prefers-color-scheme: light) {
   :root {
-
-    --primary: black;
-
+    
     color: var(--primary);
     background-color: var(--secondary);
   }
