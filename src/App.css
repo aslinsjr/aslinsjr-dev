@@ -77,6 +77,8 @@
 @media screen and (max-width: 500px) {
   .app {
     position: relative;
+    max-width: 500px;
+    overflow-x: hidden;
   }
 
 }
