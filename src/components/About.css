@@ -1,0 +1,174 @@
+.about {
+  padding: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about span {
+  animation: spanAnimation 3s infinite linear;
+  transition: 1s;
+}
+
+.about #text-decoration-h1 {
+  font-size: 7vw;
+  border-bottom: 5px solid var(--secondary);
+  animation: none;
+  font-weight: bolder;
+}
+
+.about h1 {
+  padding-right: -50%;
+  margin-right: -50%;
+  z-index: 1;
+  line-height: 210%;
+  font-size: 2.5vw;
+}
+
+.about img {
+  padding-top: 10vh;
+  width: 70%;
+  border-radius: 50%;
+}
+
+.about #about {
+  position: absolute;
+  top: 1px;
+}
+
+.infos {
+  display: flex;
+  width: 100%;
+  padding: 0 5%;
+  padding-top: 20vh;
+}
+
+.infos h2 {
+  font-size: 5vw;
+}
+
+.infos-li,
+.infos-li-delay {
+  gap: 1rem;
+  align-items: center;
+  margin: 1rem 0;
+  opacity: 0;
+  transition: 1s;
+}
+
+.logo-infos {
+  width: 6vw;
+  aspect-ratio: 1/1;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.infos li p {
+  font-size: 1rem;
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+#alliance3 {
+  background-image: url(../public/alliance3-logo.png);
+  background-position: center;
+  background-color: var(--secondary);
+  border-radius: 1rem;
+}
+
+#estacio {
+  background-image: url(../public/estacio_logo.jpeg);
+  border-radius: 1rem;
+}
+
+#softex {
+  background-image: url(../public/softex-logo.png);
+  background-position: center;
+}
+
+#potencia-tech {
+  background-image: url(../public/potencia-tech-logo.webp);
+  background-position: center;
+}
+
+#experiencias {
+  width: 50%;
+}
+
+.show {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  .container {
+    background-color: var(--secondary);
+  }
+
+  .logo {
+    background-image: url(../public/logo-light.png);
+  }
+
+  .seta::before {
+    border-top: 20px solid var(--primary);
+  }
+
+  #alliance3 {
+    border: 1px solid #545454;
+  }
+
+  #potencia-tech {
+    background-color: var(--primary);
+    border-radius: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about {
+    height: fit-content;
+    padding: 1rem;
+    position: relative;
+  }
+
+  .about img {
+    width: 100%;
+  }
+
+  .about h1 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-size: 1.4rem;
+    line-height: 150%;
+  }
+
+  .about #text-decoration-h1 {
+    font-size: 3rem;
+  }
+
+  .infos {
+    padding: 0 1rem;
+    padding-top: 5vh;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .infos h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  .infos-li,
+  .infos-li-delay {
+    opacity: 1;
+  }
+
+  #experiencias, #formacao {
+    width: 100%;
+    line-height: 130%;
+  }
+
+  .logo-infos {
+    width: 3rem;
+  }
+}
