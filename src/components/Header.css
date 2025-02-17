@@ -182,11 +182,11 @@
     border-top: 20px solid var(--primary);
   }
 
-  .header-mode .nav-bar nav {
+  .header-mode .menu-mobile .nav-bar nav {
     background-color: var(--primary);
   }
 
-  .header-mode .nav-bar a {
+  .header-mode .menu-mobile  .nav-bar a {
     color: var(--secondary);
   }
 
