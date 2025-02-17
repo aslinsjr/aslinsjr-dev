@@ -27,3 +27,11 @@
     transform: scale(1.05);
     opacity: 1;
   }
+
+  @media (prefers-color-scheme: light) {
+    #contact a {
+      background-color: var(--secondary);
+      color: var(--primary);
+      border: 1px solid var(--primary);
+    }
+  }
