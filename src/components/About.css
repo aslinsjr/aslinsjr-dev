@@ -110,6 +110,20 @@
     background-color: var(--primary);
     border-radius: 0.5rem;
   }
+
+  @keyframes spanAnimation {
+    0% {
+      filter: none;
+    }
+
+    50% {
+      filter: drop-shadow(0 0 0.5rem #545454);
+    }
+
+    100% {
+      filter: none;
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {

@@ -1,133 +1,151 @@
 .projects {
-    position: relative;
+  position: relative;
+}
+
+.projects h2 {
+  text-align: center;
+}
+
+#projects {
+  position: absolute;
+  margin-top: -10vh;
+}
+
+.projects-container {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  padding: 0 5%;
+  gap: 2rem;
+}
+
+.project {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 0.5rem 2px black;
+  border-radius: 1rem;
+}
+
+.projects h2 {
+  font-size: 5vw;
+}
+
+.img-container {
+  width: 100%;
+  aspect-ratio: 1/0.8;
+  background-color: var(--secondary);
+  border-radius: 1rem 1rem 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.project img {
+  width: 100%;
+  position: absolute;
+  bottom: -1rem;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.project img:hover {
+  filter: grayscale(0%);
+  bottom: 0;
+}
+
+.btn-control {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 1rem 1rem;
+  background-color: var(--secondary);
+}
+
+.btn-control a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem 0;
+  cursor: pointer;
+  color: var(--primary);
+  font-size: 1.5vw;
+  opacity: 0.8;
+}
+
+.btn-control a:hover {
+  opacity: 1;
+}
+
+.btn-control a:nth-child(2) {
+  border-left: 1px solid var(--primary);
+}
+
+.project h3 {
+  width: 100%;
+  font-size: 2.5vw;
+  line-height: 120%;
+  margin: 0.5rem 0;
+  padding: 0 1rem;
+}
+
+.project p {
+  padding: 0 1rem 1rem 1rem;
+  text-align: justify;
+}
+
+.project p a {
+  font-weight: 800;
+}
+
+.tools-container {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  justify-content: end;
+  padding: 0 1rem;
+}
+
+.tools-container span {
+  border: 1px solid var(--secondary);
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .projects {
+    height: fit-content;
   }
-  
-  .projects h2 {
-    text-align: center;
-  }
-  
-  #projects {
-    position: absolute;
-    margin-top: -10vh;
-  }
-  
+
   .projects-container {
-    width: 100%;
-    display: flex;
-    align-items: baseline;
-    padding: 0 5%;
-    gap: 2rem;
-  }
-  
-  .project {
-    width: 100%;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 1px 1px 0.5rem 2px black;
-    border-radius: 1rem;
   }
-  
+
   .projects h2 {
-    font-size: 5vw;
+    font-size: 3rem;
+    margin-top: 3rem;
   }
-  
+}
+
+@media (prefers-color-scheme: light) {
   .img-container {
-    width: 100%;
-    aspect-ratio: 1/0.8;
-    background-color: var(--secondary);
-    border-radius: 1rem 1rem 0 0;
-    position: relative;
-    overflow: hidden;
+    background-color: var(--primary);
   }
-  
-  .project img {
-    width: 100%;
-    position: absolute;
-    bottom: -1rem;
-    filter: grayscale(100%);
-    cursor: pointer;
-    transition: 0.5s;
-  }
-  
-  .project img:hover {
-    filter: grayscale(0%);
-    bottom: 0;
-  }
-  
+
   .btn-control {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0 0 1rem 1rem;
-    background-color: var(--secondary);
+    background-color: var(--primary);
   }
-  
+
   .btn-control a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 1rem 0;
-    cursor: pointer;
-    color: var(--primary);
-    font-size: 1.5vw;
-    opacity: 0.8;
+    color: var(--secondary);
   }
-  
-  .btn-control a:hover {
-    opacity: 1;
-  }
-  
+
   .btn-control a:nth-child(2) {
-    border-left: 1px solid var(--primary);
+    border-left: 1px solid var(--secondary);
   }
-  
-  .project h3 {
-    width: 100%;
-    font-size: 2.5vw;
-    line-height: 120%;
-    margin: 0.5rem 0;
-    padding: 0 1rem;
-  }
-  
-  .project p {
-    padding: 0 1rem 1rem 1rem;
-    text-align: justify;
-  }
-  
-  .project p a {
-    font-weight: 800;
-  }
-  
-  .tools-container {
-    width: 100%;
-    display: flex;
-    gap: 1rem;
-    justify-content: end;
-    padding: 0 1rem;
-  }
-  
-  .tools-container span {
-    border: 1px solid var(--secondary);
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border-radius: 0.5rem;
-  }
-
-  @media screen and (max-width: 500px) {
-    .projects {
-      height: fit-content;
-    }
-    
-    .projects-container {
-      flex-direction: column;
-    }
-
-    .projects h2 {
-      font-size: 3rem;
-      margin-top: 3rem;
-    }
-  }
+}

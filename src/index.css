@@ -40,7 +40,7 @@ section {
 
 @media (prefers-color-scheme: light) {
   :root {
-    
+
     color: var(--primary);
     background-color: var(--secondary);
   }
@@ -48,36 +48,5 @@ section {
   a {
     color: var(--primary);
   }
-
-  .img-container {
-    background-color: var(--primary);
-  }
-
-  .btn-control {
-    background-color: var(--primary);
-  }
-
-  .btn-control a {
-    color: var(--secondary);
-  }
-
-  .btn-control a:nth-child(2) {
-    border-left: 1px solid var(--secondary);
-  }
-
-  @keyframes spanAnimation {
-    0% {
-      filter: none;
-    }
-
-    50% {
-      filter: drop-shadow(0 0 0.5rem #545454);
-    }
-
-    100% {
-      filter: none;
-    }
-  }
-
 
 }
