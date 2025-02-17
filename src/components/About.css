@@ -101,17 +101,6 @@
 }
 
 @media (prefers-color-scheme: light) {
-  .container {
-    background-color: var(--secondary);
-  }
-
-  .logo {
-    background-image: url(../public/logo-light.png);
-  }
-
-  .seta::before {
-    border-top: 20px solid var(--primary);
-  }
 
   #alliance3 {
     border: 1px solid #545454;

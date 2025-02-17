@@ -12,7 +12,7 @@
 .logo {
   width: 50%;
   aspect-ratio: 1/1;
-  background-image: url(./public/logo-dark.png);
+  background-image: url(../assets/logo-dark.png);
   background-size: contain;
 }
 
@@ -169,6 +169,18 @@
 }
 
 @media (prefers-color-scheme: light) {
+
+  .logo {
+    background-image: url(../assets/logo-light.png);
+  }
+
+  .container {
+    background-color: var(--secondary);
+  }
+
+  .seta::before {
+    border-top: 20px solid var(--primary);
+  }
 
   .header-mode .nav-bar nav {
     background-color: var(--primary);
