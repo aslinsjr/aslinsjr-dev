@@ -128,7 +128,7 @@
   .header-mode .nav-bar nav {
     display: none;
     position: absolute;
-    bottom: -30vh;
+    bottom: -20vh;
     width: 60vw;
     padding: 1rem;
     background-color: var(--secondary);

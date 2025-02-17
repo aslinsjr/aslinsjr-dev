@@ -28,6 +28,23 @@
     opacity: 1;
   }
 
+  @media screen and (max-width: 500px) { 
+
+    #contact {
+      margin-top: 0;
+    }
+
+    #contact h2 {
+      width: 90%;
+      font-size: 2.5rem;
+    }
+
+    #contact a {
+      font-size: 2rem;
+    }
+
+  }
+
   @media (prefers-color-scheme: light) {
     #contact a {
       background-color: var(--primary);
