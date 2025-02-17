@@ -191,11 +191,11 @@
   }
 
   #linkedin {
-    background-image: url(../public/linkedin.png);
+    background-image: url(../assets/linkedin.png);
   }
 
   #github {
-    background-image: url(../public/github.png);
+    background-image: url(../assets/github.png);
   }
 
 }

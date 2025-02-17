@@ -71,24 +71,24 @@
 }
 
 #alliance3 {
-  background-image: url(../public/alliance3-logo.png);
+  background-image: url(../assets/alliance3-logo.png);
   background-position: center;
   background-color: var(--secondary);
   border-radius: 1rem;
 }
 
 #estacio {
-  background-image: url(../public/estacio_logo.jpeg);
+  background-image: url(../assets/estacio_logo.jpeg);
   border-radius: 1rem;
 }
 
 #softex {
-  background-image: url(../public/softex-logo.png);
+  background-image: url(../assets/softex-logo.png);
   background-position: center;
 }
 
 #potencia-tech {
-  background-image: url(../public/potencia-tech-logo.webp);
+  background-image: url(../assets/potencia-tech-logo.webp);
   background-position: center;
 }
 
