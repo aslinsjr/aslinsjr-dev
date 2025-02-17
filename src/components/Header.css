@@ -117,6 +117,10 @@
     width: 90%;
   }
 
+  .seta {
+    bottom: 5rem;
+  }
+
   .header-mode .logo {
     width: 8rem;
   }
