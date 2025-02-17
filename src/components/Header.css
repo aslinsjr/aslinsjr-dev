@@ -148,11 +148,11 @@
   }
 
   #linkedin {
-    background-image: url(../public/linkedin.png);
+    background-image: url(../public/linkedin-dark.png);
   }
 
   #github {
-    background-image: url(../public/github.png);
+    background-image: url(../public/github-dark.png);
   }
 
   .header-mode .menu-mobile {
