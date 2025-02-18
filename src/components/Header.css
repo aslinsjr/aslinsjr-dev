@@ -133,7 +133,8 @@
   .header-mode .nav-bar nav {
     display: none;
     position: absolute;
-    bottom: -20vh;
+    bottom: -30vh;
+    left: -35vw;
     width: 60vw;
     padding: 1rem;
     background-color: var(--secondary);
