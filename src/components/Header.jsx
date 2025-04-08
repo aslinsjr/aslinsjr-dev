@@ -50,6 +50,7 @@ const Header = () => {
             <div className="socials">
               <li><a href="https://www.linkedin.com/in/aslinsjr/" target='_blank'><div className='icons' id="linkedin"></div></a></li>
               <li><a href="https://github.com/aslinsjr" target='_blank'><div className='icons' id="github"></div></a></li>
+              <li><a href="https://www.youtube.com/@aslinsjr" target='_blank'><div className='icons' id="youtube"></div></a></li>
             </div>
           </ul>
         </nav>

@@ -27,10 +27,8 @@ function App() {
   function navBarAnimation() {
     if (scrollHeight < 1) {
       document.querySelector(".container").classList.remove("header-mode")
-      document.querySelector(".about").classList.remove("fade-in")
     } else {
       document.querySelector(".container").classList.add("header-mode")
-      document.querySelector(".about").classList.add("fade-in")
     }
 
   }
